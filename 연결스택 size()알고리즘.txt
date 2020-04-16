@@ -1,0 +1,12 @@
+3.  
+
+int size()
+
+{	
+	Node *p;		//포인터 변수 p를 설정.
+	int count = 0;	
+	for (p = top; p !=NULL; p=p->link) count++; //헤더포인터 top에서 다음 노드로 가리킬때마다 증가. 
+						//NULL일때 멈추고 count 값을 리턴.
+	return count;
+
+}
